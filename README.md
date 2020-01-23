@@ -16,11 +16,11 @@ The overall structure and code used within this project was adapted from the fir
 
 The files needed to run the model are as follows:
 
-•	TownPlanning.py: The operational model 
+•	**TownPlanning.py**: The operational model 
 
-•	DrunksAgentframework.py: The agent framework defining the Drunk class and its functions
+•	**DrunksAgentframework.py**: The agent framework defining the Drunk class and its functions
 
-•	TownLayout.txt: A raster file (300x300) which represents the town environment that the drunks move in. Houses are defined by the numbers 10 – 250, the pub is defined by 1’s and the rest of the empty space is 0. 
+•	**TownLayout.txt**: A raster file (300x300) which represents the town environment that the drunks move in. Houses are defined by the numbers 10 – 250, the pub is defined by 1’s and the rest of the empty space is 0. 
 
 All files are available to download on Github [here] (https://github.com/maisy889/Assignment-2)
 
