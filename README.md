@@ -15,8 +15,11 @@ The overall structure and code used within this project was adapted from the fir
 ## Files
 
 The files needed to run the model are as follows:
+
 •	TownPlanning.py: The operational model 
+
 •	DrunksAgentframework.py: The agent framework defining the Drunk class and its functions
+
 •	TownLayout.txt: A raster file (300x300) which represents the town environment that the drunks move in. Houses are defined by the numbers 10 – 250, the pub is defined by 1’s and the rest of the empty space is 0. 
 
 All files are available to download on Github [here] (https://github.com/maisy889/Assignment-2)
@@ -30,10 +33,15 @@ The environment was created by inputting text file which contains values in a gr
 The agents (aka ‘Drunks’) have been designed to move within the environment from the pub to their homes. When run, the model completes the following:
 
 •	Builds an environment from a text file and draws it 
+
 •	Create the agents, aka ‘drunks’
+
 •	Gives each drunk a number that corresponds to one of the houses on the map
+
 •	Models the drunks leaving the pub and walking to their homes
+
 •	Each point on the map that a drunk walks through is increased by 1 and saved 
+
 •	By clicking a button once the animation is complete the cumulative values of the drunks routes is saved as a txt file
 
 There are 25 drunk agents which are assigned a number when they are generated between 10-250, which matches one for each of the houses within the environment. The drunks will then move in a random direction until they get to their house. Every pixel that a drunk walks over has a value of 1 added to it in a separate ‘routes’ list.
@@ -59,7 +67,9 @@ Once the animation completes, click the button ‘Export Routes’. This will ex
 Initially when the drunks were first animated, they all moved the same distance at the same time. This caused the model to look quite uniform, which didn’t reflect the nature of ‘drunks’. To change this, I decided to randomise how many steps they take each turn from 5 to 10, which created a more erratic pattern of movement. However, because the drunks had no point of focus for their movement, it would take a very long time for them to reach home and the animation would usually come to a stop due to the number of iterations being met before all the drunks reached home.
 
 Different approaches could be taken to improve this:
+
 •	Creating a way that drunks can be aware of the general direction of their home 
+
 •	Making it so that the drunks cannot retrace their own steps
 
 Another issue is that the drunks can sometimes come to a stop outside of the boundary of the house. When testing, the console would print the house number and declare that the drunk had reached their home, despite them standing up to 20 pixels away from it. I am not entirely sure what is causing this issue and it would require further troubleshooting. 
